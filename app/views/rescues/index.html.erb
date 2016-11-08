@@ -1,0 +1,8 @@
+<h1>Mid-Atlantic Rescue Organizations</h1>
+<main>
+<%@rescues.each do |org|%>
+<div class="container">
+  <img class="orgs" src="<%=org.img_url%>"/>
+</div>
+<%end%>
+</main>

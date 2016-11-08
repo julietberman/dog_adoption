@@ -1,0 +1,118 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body{
+  background-image: url("http://hydrantdoggrooming.com/wp-content/uploads/2014/03/grey-paw-print-seamless-pattern.png");
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Helvetica;
+}
+
+main{
+  text-align:center;
+}
+nav {
+  float: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px 0;
+  width: 80%;
+  background: RGB(142, 142, 142);
+}
+nav > a {
+color: white;
+text-decoration: none;
+font-size: 20px;
+padding: 3px;
+border: 6px solid transparent;
+}
+
+nav > a:hover{
+  background: RGB(65, 65, 67);
+}
+
+.logo{
+  width: 200px;
+}
+
+img{
+  display: block;
+  margin: auto;
+  width: 20vw;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  margin: 0;
+
+}
+
+.orgs{
+  width: 15vw;
+  padding: 20px;
+}
+
+h3{
+  margin: 0;
+  color: RGB(65, 65, 67);
+}
+.container{
+  display: inline-block;
+  background-color: rgba(255, 255, 255, .7);
+  padding: 30px;
+  margin: 40px;
+  border: 8px outset;
+  border-radius: 100%;
+  border-top-color: RGB(119, 176, 158);
+  border-left-color: RGB(119, 176, 158);
+  border-right-color: rgba(0, 0, 0, .5);
+  border-bottom-color: rgba(0, 0, 0, .5);
+}
+
+section{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#dogs{
+  position: relative;
+  padding: 0;
+  margin: 0;
+  min-height: 220px;
+  max-height: 320px;
+  min-width: 100%;
+}
+.dogs{
+  display: inline-block;
+  background-color: rgba(255, 255, 255, .7);
+  margin: 40px;
+  width: 220px;
+  height: 220px;
+  overflow: hidden;
+  border: 8px outset;
+  border-radius:100%;
+  border-top-color: RGB(119, 176, 158);
+  border-left-color: RGB(119, 176, 158);
+  border-right-color: rgba(0, 0, 0, .5);
+  border-bottom-color: rgba(0, 0, 0, .5);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:flex-start;
+}

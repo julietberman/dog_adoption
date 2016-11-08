@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Adoption</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+      <a href="/"><%=image_tag("logo.png", class:"logo")%></a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/rescues">Rescue Organizations</a>
+      <a href="/dogs">Adoptable Dogs</a>
+      <a href="#">Adoption Resources</a>
+    </nav>
+    <%= yield %>
+  </body>
+</html>

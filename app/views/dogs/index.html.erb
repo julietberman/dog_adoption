@@ -1,0 +1,10 @@
+<h1>Adoptable Dogs</h1>
+<section>
+<%@dogs.each do |dog|%>
+<div class="dogs">
+
+<img id="dogs" src="<%=dog.img_url%>"/>
+
+</div>
+<%end%>
+</section>
