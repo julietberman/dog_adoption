@@ -1,10 +1,13 @@
-<h1>Adoptable Dogs</h1>
+<h1>Adoptable Dogs <%=link_to "(+)",  new_dog_path%></h1>
+
+
 <section>
 <%@dogs.each do |dog|%>
-<div class="dogs">
 
-<img id="dogs" src="<%=dog.img_url%>"/>
+  <div class="dogs"><a href="/dogs/<%=dog.id%>">
+  <img id="dogs" src="<%=dog.img_url%>"/>
+  </a>
+  </div>
 
-</div>
 <%end%>
 </section>

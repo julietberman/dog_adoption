@@ -1,2 +1,19 @@
-<h1>Rescues#new</h1>
-<p>Find me in app/views/rescues/new.html.erb</p>
+<h1>Add Rescue Organization</h1>
+
+<div class="box">
+<%= form_for @rescue do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+<br><br>
+  <%= f.label :logo %>
+  <%= f.text_field :img_url %>
+<br><br>
+  <%= f.label :website %>
+  <%= f.text_field :website %>
+<br><br>
+  <%= f.label :state %>
+  <%= f.text_field :state %>
+<br><br>
+  <%= f.submit%>
+<% end %>
+</div>

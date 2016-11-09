@@ -31,9 +31,13 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 10px 0;
+  margin: 20px 0;
   width: 80%;
   background: RGB(142, 142, 142);
+}
+a{
+  color: RGB(119, 176, 158);
+  text-decoration: none;
 }
 nav > a {
 color: white;
@@ -51,7 +55,7 @@ nav > a:hover{
   width: 200px;
 }
 
-img{
+img.icon{
   display: block;
   margin: auto;
   width: 20vw;
@@ -63,20 +67,43 @@ img{
 }
 
 .orgs{
-  width: 15vw;
+
   padding: 20px;
+  max-height: 150px;
+}
+
+h1{
+  color: RGB(65, 65, 67);
 }
 
 h3{
   margin: 0;
   color: RGB(65, 65, 67);
 }
+
 .container{
   display: inline-block;
   background-color: rgba(255, 255, 255, .7);
   padding: 30px;
   margin: 40px;
   border: 8px outset;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border-top-color: RGB(119, 176, 158);
+  border-left-color: RGB(119, 176, 158);
+  border-right-color: rgba(0, 0, 0, .5);
+  border-bottom-color: rgba(0, 0, 0, .5);
+}
+
+.main{
+  display: inline-block;
+  background-color: rgba(255, 255, 255, .7);
+  padding: 30px;
+  margin: 40px;
+  border: 8px outset;
+  width: 300px;
+  height: 300px;
   border-radius: 100%;
   border-top-color: RGB(119, 176, 158);
   border-left-color: RGB(119, 176, 158);
@@ -90,14 +117,17 @@ section{
   flex-wrap: wrap;
   justify-content: center;
 }
+
 #dogs{
   position: relative;
   padding: 0;
   margin: 0;
-  min-height: 220px;
-  max-height: 320px;
-  min-width: 100%;
+  max-height: 330px;
+  display: block;
+  margin: auto;
+
 }
+
 .dogs{
   display: inline-block;
   background-color: rgba(255, 255, 255, .7);
@@ -115,4 +145,56 @@ section{
   flex-direction: row;
   justify-content: center;
   align-items:flex-start;
+}
+
+.square{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, .7);
+  text-align: center;
+  padding: 30px;
+  margin: 40px;
+  width: 400px;
+  border: 8px outset;
+  border-radius: 20%;
+  border-top-color: RGB(119, 176, 158);
+  border-left-color: RGB(119, 176, 158);
+  border-right-color: rgba(0, 0, 0, .5);
+  border-bottom-color: rgba(0, 0, 0, .5);
+}
+
+p{
+  padding: 0;
+  margin: 8px;
+}
+
+#display{
+  max-width: 350px;
+}
+
+.box{
+  padding: 20px;
+  width: 60%;
+  background-color: rgba(255, 255, 255, .7);
+}
+
+button{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 10px;
+  font-size: 18px;
+  background-color: white;
+  border-radius: 5px;
+  position: relative;
+  display: inline-block;
+}
+
+
+
+button:hover{
+  background-color: RGB(221, 221, 221);
 }

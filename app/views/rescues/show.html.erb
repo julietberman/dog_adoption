@@ -1,2 +1,18 @@
-<h1>Rescues#show</h1>
-<p>Find me in app/views/rescues/show.html.erb</p>
+<div class="square">
+  <h1><%=@rescue.name%></h1>
+  <img id="display" src="<%=@rescue.img_url%>"/>
+  <p><strong>Organization:</strong> <%=@rescue.name%></p>
+  <p><strong>Website:</strong> <a href="http://<%=@rescue.website%>" target="_blank"><%=@rescue.website%></a></p>
+  <p><strong>State:</strong> <%=@rescue.state%></p>
+</div>
+
+
+<section>
+<%@dogs.each do |dog|%>
+<a href = "/dogs/<%=dog.id%>"><div class="dogs">
+
+<img id="dogs" src="<%=dog.img_url%>"/>
+
+</div>
+<%end%>
+</section>

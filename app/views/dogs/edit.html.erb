@@ -1,15 +1,15 @@
-<h1>Create New Dog Profile</h1>
+<h1>Edit <%=@dog.name%>'s Profile</h1>
 
 <div class="box">
 <%= form_for @dog do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>
 <br><br>
-Age: <%= select_tag(:age, options_for_select([
+Age: <%= select_tag :age, options_for_select([
   ["Puppy", "Puppy"],
   ["Adult", "Adult"],
   ["Senior", "Senior"]
-  ]))%>
+  ], @dog.age)%>
 <br><br>
   <%= f.label :gender %>
   <%= f.text_field :gender %>
@@ -20,13 +20,13 @@ Age: <%= select_tag(:age, options_for_select([
   <%= f.label :photo %>
   <%= f.text_field :img_url %>
 <br><br>
-  Status: <%= select_tag(:status, options_for_select([
+  Status: <%= select_tag :status, options_for_select([
     ["Available", "Available"],
     ["Needs Foster", "Needs Foster"],
     ["Adoption Pending", "Adoption Pending"]
-    ]))%>
+    ], @dog.status)%>
 <br><br>
-  Rescue Organization: <%= select_tag(:rescue_id, options_for_select(@rescues))%>
+  Rescue Organization: <%= select_tag :rescue_id, options_for_select(@rescues, @dog.rescue.id)%>
 <br><br>
   <%= f.submit%>
 <% end %>

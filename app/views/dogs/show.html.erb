@@ -1,1 +1,13 @@
-show each dog
+<div class="square">
+  <h1><%=@dog.name%></h1>
+  <img id="display" src="<%=@dog.img_url%>"/>
+  <p><strong>Age:</strong> <%=@dog.age%></p>
+  <p><strong>Gender:</strong> <%=@dog.gender%></p>
+  <p><strong>Breed:</strong> <%=@dog.breed%></p>
+  <p><strong>Status:</strong> <%=@dog.status%></p>
+  <p><strong>Rescue Organization:</strong> <a href="/rescues/<%=@dog.rescue.id%>"><%=@dog.rescue.name%></a></p>
+  <section>
+ <button><%= link_to "Edit", edit_dog_path(@dog)%></button>
+ <button><%= link_to "Delete", @dog, method: :delete, class: "delete" %></button>
+ </section>
+</div>

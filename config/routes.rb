@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  get 'welcome/index'
 
   root "welcome#index"
+
+  get '/resources', to: 'resources#index'
+
   resources :dogs
   resources :rescues
 
